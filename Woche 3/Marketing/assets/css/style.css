@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/montserrat-regular.woff)
+    format('woff');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/montserrat-bold.woff)
+    format('woff');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/montserrat-medium.woff)
+    format('woff');
+    font-weight: medium;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/montserrat-bold-italic.woff)
+    format ('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+html {
+	/* Standard-Schrift definieren */
+    font: 20px/1.6 'Montserrat', sans-serif;
+}
+
+body,
+h1,
+h2 {
+	/* Standard-Margin entfernen */
+	margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0 0 0.75rem;
+        
+}
+
+.mission {
+    padding: 100px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mission h2 {
+    text-align: center;
+}
+.background {
+    background: url(../images/background-small.jpg);
+    background-size: 100%;
+}
+.action {
+
+    max-width: 960px;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    margin: auto;
+}
+
+.action h2 {
+    margin: auto;
+}
+
+.functions{
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.function {
+    width: 100%;
+    display: flex;
+}
+
+.text {
+    flex-grow:1;
+    width: 70%;
+    padding: 20px;    
+}
+
+.img {
+    width: 320px;
+    padding: 20px;
+}
+
+section {
+    padding: 100px 0;
+}
+section h2 {
+    text-align: center;
+}
+
+.press {
+    
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+.press img {
+    height: 20px;
+    width: auto;
+}
+.press article {
+    box-sizing: border-box;
+    width: 33.3333333%;
+    padding: 40px 20px;
+}
