@@ -1,35 +1,43 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/montserrat-regular.woff)
-    format('woff');
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/montserrat-bold.woff)
-    format('woff');
-    font-weight: bold;
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/montserrat-medium.woff)
-    format('woff');
-    font-weight: medium;
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url(../fonts/montserrat-bold-italic.woff)
-    format ('woff');
-    font-weight: bold;
-    font-style: italic;
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat-regular.woff') format('woff');
+	font-weight: normal;
 }
 
-img {
-    max-width: 100%;
-    
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat-medium.woff') format('woff');
+	font-weight: 500;
 }
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat-bold.woff') format('woff');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat-bold-italic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
 html {
 	/* Standard-Schrift definieren */
-    font: 20px/1.6 'Montserrat', sans-serif;
+	font: 16px/1.6 'Montserrat', sans-serif;
+}
+
+@media (min-width: 600px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 800px) {
+	html {
+		font-size: 20px;
+	}
 }
 
 body,
@@ -39,143 +47,197 @@ h2 {
 	margin: 0;
 }
 
-h1 {
-    font-size: 3rem;
-    line-height: 1.1;
-    margin-bottom: 2rem;
-}
-h2 {
-    font-size: 30px;
-    line-height: 1.1;
-    margin-bottom: 15px;
+img {
+	/* Bilder dürfen niemals breiter als der Inhalt sein */
+	max-width: 100%;
 }
 
 p {
-    margin: 0 0 0.75rem;
-        
+	margin: 0 0 0.75rem;
 }
 
-header {
-    background-image: url(../images/background.jpg);
-    min-height: 800px;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h1 {
+	font-size: 2rem;
+	line-height: 1.1;
+	margin-bottom: 1rem;
 }
 
-.teaser {
-
-    
-    max-width: 1000px;
-    
-    text-shadow: 0 1px 5px rgba(0,0,0,0.5);
-    color: #fff;
-    padding: 20px;
-    
-
-    
-    
-    
-    
-
+@media (min-width: 800px) {
+	h1 {
+		font-size: 3rem;
+	}
 }
 
-.teaser p {
-    
-    font-size: 25px;
-    font-weight: 500;
-    
+h2 {
+	font-size: 1.5rem;
+	line-height: 1.1;
+	margin-bottom: 0.75rem;
 }
 
-.mission {
-    padding: 100px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+em {
+	color: #f35a5a;
 }
 
-.mission h2 {
-    text-align: center;
-}
-.background {
-    background: url(../images/background-small.jpg);
-    background-size: 100%;
-}
-.action {
-
-    max-width: 960px;
-    padding: 80px 20px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 5px rgba(0,0,0,0.5);
-    margin: auto;
+a {
+	color: #f35a5a;
+	text-decoration-line: none;
+	border-bottom: 0.2rem solid #f35a5a;
 }
 
-.action h2 {
-    margin: auto;
+a:hover {
+	color: #000;
 }
 
-.functions{
-    padding: 80px 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    
+a:active {
+	color: #000000;
 }
 
-.function {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    
-    
-    
+
+.button {
+	background-color: #f35a5a;
+	border: 0.2rem solid #f35a5a;
+	color: #fff;
+	font-weight: 500;
+	padding: 2rem 1rem;
+	margin-top: 1rem;
+	display: inline-block;
+}
+/* Abschnitt: Kopfzeile
+** ======================================== */
+
+.hero-header {
+	background-image: url('../images/background.jpg');
+	background-position: center top;
+	min-height: 800px;
+	height: 100vh;
+	font-size: 1.25rem;
+	font-weight: 500;
+	text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.text {
-    flex-grow:1;
-    width: 70%;
-    padding: 20px;    
+.hero-header__container {
+	padding: 1rem;
+	max-width: 1000px;
+	box-sizing: border-box;
 }
 
-.img {
-    width: 320px;
-    padding: 20px;
+/* Abschnitt: Mission
+** ======================================== */
+
+.about {
+	box-sizing: border-box;
+	max-width: 1000px;
+	padding: 5rem 1rem;
+	margin: 0 auto;
 }
 
-section {
-    padding: 100px 0;
+.about__heading {
+	text-align: center;
 }
-section h2 {
-    text-align: center;
+
+/* Abschnitt: Call To Action
+** ======================================== */
+
+.call-to-action {
+	background-image: url('../images/background-small.jpg');
+	background-position: center;
+	background-size: cover;
+	text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	color: #ffffff;
+	padding: 4rem 1rem;
 }
+
+/* Abschnitt: Funktionen
+** ======================================== */
+
+.features {
+	box-sizing: border-box;
+	max-width: 1000px;
+	padding: 4rem 0;
+	margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+	.features__container {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.features__content {
+	flex: 1;
+	padding: 1rem;
+}
+
+.features__image {
+	width: 240px;
+	padding: 1rem;
+}
+
+.features__image--right {
+	order: 2;
+}
+
+@media (min-width: 800px) {
+	.features__image {
+		max-width: 320px;
+	}
+}
+
+/* Abschnitt: Pressestimmen
+** ======================================== */
 
 .press {
-    
-    width: 1000px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
+	background-color: #efefef;
+	padding: 5rem 0;
 }
 
-
-
-.press img {
-    height: 1rem;
-    width: auto;
-}
-.press article {
-    box-sizing: border-box;
-    width: 33.3333333%;
-    padding: 2rem 1rem;
-    
+.press__heading {
+	text-align: center;
+	padding: 0 1rem;
 }
 
-/* section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-} */
+.press__container {
+	box-sizing: border-box;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.press__item {
+	box-sizing: border-box;
+	padding: 2rem 1rem;
+	width: 100%;
+}
+
+@media (min-width: 500px) {
+	.press__item {
+		width: 50%;
+	}
+}
+
+@media (min-width: 800px) {
+	.press__item {
+		width: 33.3333333%;
+	}
+}
+
+.press__logo {
+	height: 1rem;
+}
+
+.press__blockquote {
+	margin: 0;
+}
+.footer {
+	padding: 3rem 1rem;
+	border-top: 0.1rem solid rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
