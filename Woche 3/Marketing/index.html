@@ -4,8 +4,17 @@
 	<meta charset="utf-8">
 	<title>OneChat – Der einzige Messenger, den du brauchst</title>
 	<link href="./assets/css/style.css" rel="stylesheet">
+	
 </head>
 <body>
+
+<nav>
+	<a href="#mission" data-scroll-reaction>Mission</a>
+	<a href="#function" data-scroll-reaction>Funktionen</a>
+	<a href="#press" data-scroll-reaction>Presse</a>
+</nav>
+
+
 
 <header class="hero-header">
 	<div class="hero-header__container">
@@ -16,7 +25,7 @@
 	</div>
 </header>
 
-<section class="about">
+<section class="about" id="mission">
 	<h2 class="about__heading">Unsere Mission: <em>mehr Zeit für Dich</em></h2>
 	<p>Jeder von uns kennt es: Man benutzt hauptsächlich Whatsapp, um mit seinen Freunden in Kontakt zu bleiben. Wichtige Informationen zum Studium erhält man hingegen auf Facebook. Die eigenen Eltern schreiben lieber SMS und der Chef nutzt immer noch E-Mails, weil er das schon seit 20 Jahren so macht. Alles ganz schön kompliziert.</p>
 	<p>Doch das muss nicht so sein: Wir haben eine App entwickelt, die Deine gesamte Kommunikation zusammenführt – in einen einzigen übersichtlichen Chat. Damit Du Dir nie wieder Gedanken machen musst, wie Du Deine Freunde, Bekannten und Arbeitskollegen am besten erreichst.</p>
@@ -28,10 +37,14 @@
 	<a class="button" href="#">OneChat für Android</a>
 </section>
 
-<section class="features">
+<section class="features" id="function">
 	<article class="features__container">
 		<div class="features__image">
-			<img src="images/smartphone1.jpg" alt="Smartphone mit OneChat-App und geöffnetem Chat-Verlauf: Der Besitzer verabredet sich mit Anna und Max für 20 Uhr, da er bis zu dieser Uhrzeit arbeiten muss">
+			<img srcset=    "./assets/images/smartphone1@240.jpg 240w,
+							 ./assets/images/smartphone1@480.jpg 480w,
+							 ./assets/images/smartphone1@720.jpg 720w"
+				 sizes=		"(min-width: 240px) 240px, 100vw"
+							 src=		"./assets/images/smartphone1@720.jpg" alt="Smartphone mit OneChat-App und geöffnetem Chat-Verlauf: Der Besitzer verabredet sich mit Anna und Max für 20 Uhr, da er bis zu dieser Uhrzeit arbeiten muss">
 		</div>
 		<div class="features__content">
 			<h2>OneChat verbindet<br><em>alle Deine Netzwerke</em></h2>
@@ -39,8 +52,12 @@
 		</div>
 	</article>
 	<article class="features__container">
-		<div class="features__image features__image--right">
-			<img src="images/smartphone2.jpg" alt="Smartphone mit OneChat-App und geöffnetem Chat-Verlauf: Der Besitzer weist Max darauf hin, dass er den Termin bereits mit Anna abgeklärt hat">
+		<div class="features__image--right">
+			<img srcset=    "./assets/images/smartphone2@240.jpg 240w,
+							 ./assets/images/smartphone2@480.jpg 480w,
+							 ./assets/images/smartphone2@720.jpg 720w"
+				 sizes=		"(min-width: 240px) 240px, 100vw"
+							 src=		"./assets/images/smartphone2@720.jpg" alt="Smartphone mit OneChat-App und geöffnetem Chat-Verlauf: Der Besitzer verabredet sich mit Anna und Max für 20 Uhr, da er bis zu dieser Uhrzeit arbeiten muss">
 		</div>
 		<div class="features__content">
 			<h2>OneChat weiß, wie Du<br><em>Deine Freunde erreichst</em></h2>
@@ -49,7 +66,7 @@
 	</article>
 </section>
 
-<section class="press">
+<section class="press" id="press">
 	<h2 class="press__heading">Was die Presse <em>über OneChat sagt</em></h2>
 	<div class="press__container">
 		<article class="press__item">
@@ -90,6 +107,11 @@
 	<p>© 2018 OneChat Ltd. – <a href="#">AGB</a>, <a href="#">Datenschutz</a>, <a href="#">Impressum</a></p>
 </div>
 </footer>
+
+<script src="./assets/js/scroll-reaction.min.js"></script>
+<script>
+	var reaction = new ScrollReaction();
+</script>
 
 </body>
 </html>

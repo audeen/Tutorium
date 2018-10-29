@@ -88,6 +88,11 @@ a:hover {
 	color: #000;
 }
 
+a[data-scroll-active] {
+	color: #000000;
+	border-bottom: 0.2rem solid #000;
+  }
+
 a:active {
 	color: #000000;
 }
@@ -105,6 +110,27 @@ a:active {
 /* Abschnitt: Kopfzeile
 ** ======================================== */
 
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 80px;
+	
+	background-color: #f35a5a;
+	border-bottom: 0.2rem solid #fff;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+
+}
+
+nav a {
+	color: #fff;
+	font-weight: 500;
+	padding: 0.5rem 2rem;
+
+}
 .hero-header {
 	background-image: url('../images/background.jpg');
 	background-position: center top;
@@ -117,6 +143,7 @@ a:active {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-top: 3rem;
 }
 
 .hero-header__container {
